@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "dataset_size": 20,
+    "source": "docs/Analysis_Report.md",
+    "jurisdiction": "PRC",
+    "note": "Based on official single-round benchmark table"
+  },
+  "overall_scores": {
+    "layman_prompt": 22.5,
+    "expert_lawyer_prompt": 70.7,
+    "agent_v1_2": 86.1
+  },
+  "deltas": {
+    "agent_v1_2_minus_layman": 63.6,
+    "agent_v1_2_minus_expert": 15.4
+  },
+  "dimension_metrics": {
+    "risk_recall": {
+      "layman_prompt": 40,
+      "expert_lawyer_prompt": 85,
+      "agent_v1_2": 90
+    },
+    "quant_sensitivity": {
+      "layman_prompt": 10,
+      "expert_lawyer_prompt": 80,
+      "agent_v1_2": 75
+    },
+    "adversarial_defense": {
+      "layman_prompt": 20,
+      "expert_lawyer_prompt": 70,
+      "agent_v1_2": 88
+    },
+    "performance_lifecycle": {
+      "layman_prompt": 0,
+      "expert_lawyer_prompt": 0,
+      "agent_v1_2": 95
+    }
+  },
+  "case_slices": [
+    {"case_id": "A", "layman": 0, "expert": 80, "v1_2": 90},
+    {"case_id": "B", "layman": 20, "expert": 70, "v1_2": 90},
+    {"case_id": "C", "layman": 0, "expert": 60, "v1_2": 80},
+    {"case_id": "D", "layman": 10, "expert": 50, "v1_2": 70},
+    {"case_id": "E", "layman": 10, "expert": 90, "v1_2": 90},
+    {"case_id": "F", "layman": 0, "expert": 0, "v1_2": 80}
+  ],
+  "ranking": ["agent_v1_2", "expert_lawyer_prompt", "layman_prompt"],
+  "limitations": [
+    "No repeated runs included",
+    "No variance/confidence interval yet"
+  ]
+}

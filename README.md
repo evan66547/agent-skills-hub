@@ -67,6 +67,16 @@ agent-skills-hub/
 
 ---
 
+## Evaluation Reports
+
+- Official single-round comparison: [`reports/v1.2-official-comparison.md`](./reports/v1.2-official-comparison.md)
+- 100-run self-test summary: [`reports/v1.2-self-test-100-runs.md`](./reports/v1.2-self-test-100-runs.md)
+- Raw data (JSON):
+  - [`reports/v1.2-official-comparison.json`](./reports/v1.2-official-comparison.json)
+  - [`reports/v1.2-self-test-100-runs.json`](./reports/v1.2-self-test-100-runs.json)
+
+---
+
 ## Notes
 
 - This repository provides drafting and risk-review support, not formal legal advice.

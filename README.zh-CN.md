@@ -66,6 +66,16 @@ agent-skills-hub/
 
 ---
 
+## 测评报告
+
+- 官方单轮对比报告：[`reports/v1.2-official-comparison.md`](./reports/v1.2-official-comparison.md)
+- 100 次自测汇总报告：[`reports/v1.2-self-test-100-runs.md`](./reports/v1.2-self-test-100-runs.md)
+- 原始结构化数据（JSON）：
+  - [`reports/v1.2-official-comparison.json`](./reports/v1.2-official-comparison.json)
+  - [`reports/v1.2-self-test-100-runs.json`](./reports/v1.2-self-test-100-runs.json)
+
+---
+
 ## 免责声明
 
 本仓库用于法务风控与条款草拟辅助，不构成正式法律意见。实务落地请由持牌律师复核。

@@ -1,0 +1,2744 @@
+{
+  "config": {
+    "input_dir": "data/test_cases",
+    "predictions_root": "runs_self_100",
+    "schema": "schemas/output_schema.json",
+    "recall_threshold": 0.45,
+    "plan_threshold": 0.45
+  },
+  "group_summary": {
+    "expert": {
+      "run_count": 100,
+      "mean_avg_score": 73.77,
+      "std_avg_score": 5.87,
+      "mean_pass_rate": 48.35,
+      "std_pass_rate": 10.68,
+      "best_run": "expert_run_76",
+      "worst_run": "expert_run_06"
+    },
+    "layman": {
+      "run_count": 100,
+      "mean_avg_score": 31.57,
+      "std_avg_score": 6.72,
+      "mean_pass_rate": 5.3,
+      "std_pass_rate": 4.79,
+      "best_run": "layman_run_95",
+      "worst_run": "layman_run_34"
+    },
+    "v1_2": {
+      "run_count": 100,
+      "mean_avg_score": 88.46,
+      "std_avg_score": 5.05,
+      "mean_pass_rate": 75.7,
+      "std_pass_rate": 9.19,
+      "best_run": "v1_2_run_23",
+      "worst_run": "v1_2_run_49"
+    }
+  },
+  "runs": [
+    {
+      "run_name": "expert_run_01",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_01",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 75.4
+    },
+    {
+      "run_name": "expert_run_02",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_02",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 60.0
+    },
+    {
+      "run_name": "expert_run_03",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_03",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 77.5
+    },
+    {
+      "run_name": "expert_run_04",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_04",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 83.0
+    },
+    {
+      "run_name": "expert_run_05",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_05",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 73.7
+    },
+    {
+      "run_name": "expert_run_06",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_06",
+      "total_cases": 20,
+      "passed": 4,
+      "pass_rate": 20.0,
+      "avg_score": 56.2
+    },
+    {
+      "run_name": "expert_run_07",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_07",
+      "total_cases": 20,
+      "passed": 5,
+      "pass_rate": 25.0,
+      "avg_score": 62.4
+    },
+    {
+      "run_name": "expert_run_08",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_08",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 76.9
+    },
+    {
+      "run_name": "expert_run_09",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_09",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 82.7
+    },
+    {
+      "run_name": "expert_run_10",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_10",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 68.7
+    },
+    {
+      "run_name": "expert_run_100",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_100",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 73.5
+    },
+    {
+      "run_name": "expert_run_11",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_11",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 77.7
+    },
+    {
+      "run_name": "expert_run_12",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_12",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 82.9
+    },
+    {
+      "run_name": "expert_run_13",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_13",
+      "total_cases": 20,
+      "passed": 6,
+      "pass_rate": 30.0,
+      "avg_score": 70.1
+    },
+    {
+      "run_name": "expert_run_14",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_14",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 71.8
+    },
+    {
+      "run_name": "expert_run_15",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_15",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 74.8
+    },
+    {
+      "run_name": "expert_run_16",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_16",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 72.0
+    },
+    {
+      "run_name": "expert_run_17",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_17",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 74.7
+    },
+    {
+      "run_name": "expert_run_18",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_18",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 76.5
+    },
+    {
+      "run_name": "expert_run_19",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_19",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 77.7
+    },
+    {
+      "run_name": "expert_run_20",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_20",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 81.4
+    },
+    {
+      "run_name": "expert_run_21",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_21",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 66.4
+    },
+    {
+      "run_name": "expert_run_22",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_22",
+      "total_cases": 20,
+      "passed": 7,
+      "pass_rate": 35.0,
+      "avg_score": 63.5
+    },
+    {
+      "run_name": "expert_run_23",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_23",
+      "total_cases": 20,
+      "passed": 7,
+      "pass_rate": 35.0,
+      "avg_score": 64.2
+    },
+    {
+      "run_name": "expert_run_24",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_24",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 75.1
+    },
+    {
+      "run_name": "expert_run_25",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_25",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 87.2
+    },
+    {
+      "run_name": "expert_run_26",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_26",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 76.4
+    },
+    {
+      "run_name": "expert_run_27",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_27",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 79.3
+    },
+    {
+      "run_name": "expert_run_28",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_28",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 75.0
+    },
+    {
+      "run_name": "expert_run_29",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_29",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 77.8
+    },
+    {
+      "run_name": "expert_run_30",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_30",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 72.2
+    },
+    {
+      "run_name": "expert_run_31",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_31",
+      "total_cases": 20,
+      "passed": 6,
+      "pass_rate": 30.0,
+      "avg_score": 61.0
+    },
+    {
+      "run_name": "expert_run_32",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_32",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 71.7
+    },
+    {
+      "run_name": "expert_run_33",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_33",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 76.7
+    },
+    {
+      "run_name": "expert_run_34",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_34",
+      "total_cases": 20,
+      "passed": 7,
+      "pass_rate": 35.0,
+      "avg_score": 70.2
+    },
+    {
+      "run_name": "expert_run_35",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_35",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 76.3
+    },
+    {
+      "run_name": "expert_run_36",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_36",
+      "total_cases": 20,
+      "passed": 6,
+      "pass_rate": 30.0,
+      "avg_score": 69.6
+    },
+    {
+      "run_name": "expert_run_37",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_37",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 76.8
+    },
+    {
+      "run_name": "expert_run_38",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_38",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 70.8
+    },
+    {
+      "run_name": "expert_run_39",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_39",
+      "total_cases": 20,
+      "passed": 7,
+      "pass_rate": 35.0,
+      "avg_score": 73.2
+    },
+    {
+      "run_name": "expert_run_40",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_40",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 79.0
+    },
+    {
+      "run_name": "expert_run_41",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_41",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 81.0
+    },
+    {
+      "run_name": "expert_run_42",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_42",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 75.7
+    },
+    {
+      "run_name": "expert_run_43",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_43",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 68.7
+    },
+    {
+      "run_name": "expert_run_44",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_44",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 69.2
+    },
+    {
+      "run_name": "expert_run_45",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_45",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 68.7
+    },
+    {
+      "run_name": "expert_run_46",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_46",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 77.8
+    },
+    {
+      "run_name": "expert_run_47",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_47",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 75.0
+    },
+    {
+      "run_name": "expert_run_48",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_48",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 69.3
+    },
+    {
+      "run_name": "expert_run_49",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_49",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 80.9
+    },
+    {
+      "run_name": "expert_run_50",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_50",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 70.5
+    },
+    {
+      "run_name": "expert_run_51",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_51",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 70.3
+    },
+    {
+      "run_name": "expert_run_52",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_52",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 78.1
+    },
+    {
+      "run_name": "expert_run_53",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_53",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 78.2
+    },
+    {
+      "run_name": "expert_run_54",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_54",
+      "total_cases": 20,
+      "passed": 6,
+      "pass_rate": 30.0,
+      "avg_score": 68.4
+    },
+    {
+      "run_name": "expert_run_55",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_55",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 72.0
+    },
+    {
+      "run_name": "expert_run_56",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_56",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 67.3
+    },
+    {
+      "run_name": "expert_run_57",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_57",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 81.0
+    },
+    {
+      "run_name": "expert_run_58",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_58",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 73.3
+    },
+    {
+      "run_name": "expert_run_59",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_59",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 72.8
+    },
+    {
+      "run_name": "expert_run_60",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_60",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 74.9
+    },
+    {
+      "run_name": "expert_run_61",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_61",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 72.0
+    },
+    {
+      "run_name": "expert_run_62",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_62",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 80.2
+    },
+    {
+      "run_name": "expert_run_63",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_63",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 71.1
+    },
+    {
+      "run_name": "expert_run_64",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_64",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 66.0
+    },
+    {
+      "run_name": "expert_run_65",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_65",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 77.6
+    },
+    {
+      "run_name": "expert_run_66",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_66",
+      "total_cases": 20,
+      "passed": 7,
+      "pass_rate": 35.0,
+      "avg_score": 68.8
+    },
+    {
+      "run_name": "expert_run_67",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_67",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 81.2
+    },
+    {
+      "run_name": "expert_run_68",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_68",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 67.4
+    },
+    {
+      "run_name": "expert_run_69",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_69",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 76.6
+    },
+    {
+      "run_name": "expert_run_70",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_70",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 73.4
+    },
+    {
+      "run_name": "expert_run_71",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_71",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 71.4
+    },
+    {
+      "run_name": "expert_run_72",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_72",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 76.4
+    },
+    {
+      "run_name": "expert_run_73",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_73",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 70.1
+    },
+    {
+      "run_name": "expert_run_74",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_74",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 68.9
+    },
+    {
+      "run_name": "expert_run_75",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_75",
+      "total_cases": 20,
+      "passed": 7,
+      "pass_rate": 35.0,
+      "avg_score": 69.5
+    },
+    {
+      "run_name": "expert_run_76",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_76",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 87.3
+    },
+    {
+      "run_name": "expert_run_77",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_77",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 73.6
+    },
+    {
+      "run_name": "expert_run_78",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_78",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 84.2
+    },
+    {
+      "run_name": "expert_run_79",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_79",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 67.4
+    },
+    {
+      "run_name": "expert_run_80",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_80",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 81.2
+    },
+    {
+      "run_name": "expert_run_81",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_81",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 74.9
+    },
+    {
+      "run_name": "expert_run_82",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_82",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 81.6
+    },
+    {
+      "run_name": "expert_run_83",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_83",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 76.0
+    },
+    {
+      "run_name": "expert_run_84",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_84",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 68.6
+    },
+    {
+      "run_name": "expert_run_85",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_85",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 79.8
+    },
+    {
+      "run_name": "expert_run_86",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_86",
+      "total_cases": 20,
+      "passed": 7,
+      "pass_rate": 35.0,
+      "avg_score": 72.1
+    },
+    {
+      "run_name": "expert_run_87",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_87",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 78.2
+    },
+    {
+      "run_name": "expert_run_88",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_88",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 69.8
+    },
+    {
+      "run_name": "expert_run_89",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_89",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 75.2
+    },
+    {
+      "run_name": "expert_run_90",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_90",
+      "total_cases": 20,
+      "passed": 5,
+      "pass_rate": 25.0,
+      "avg_score": 65.1
+    },
+    {
+      "run_name": "expert_run_91",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_91",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 76.8
+    },
+    {
+      "run_name": "expert_run_92",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_92",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 73.8
+    },
+    {
+      "run_name": "expert_run_93",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_93",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 76.5
+    },
+    {
+      "run_name": "expert_run_94",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_94",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 75.3
+    },
+    {
+      "run_name": "expert_run_95",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_95",
+      "total_cases": 20,
+      "passed": 7,
+      "pass_rate": 35.0,
+      "avg_score": 71.2
+    },
+    {
+      "run_name": "expert_run_96",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_96",
+      "total_cases": 20,
+      "passed": 8,
+      "pass_rate": 40.0,
+      "avg_score": 68.7
+    },
+    {
+      "run_name": "expert_run_97",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_97",
+      "total_cases": 20,
+      "passed": 6,
+      "pass_rate": 30.0,
+      "avg_score": 62.5
+    },
+    {
+      "run_name": "expert_run_98",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_98",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 82.6
+    },
+    {
+      "run_name": "expert_run_99",
+      "group": "expert",
+      "predictions_dir": "runs_self_100/expert_run_99",
+      "total_cases": 20,
+      "passed": 10,
+      "pass_rate": 50.0,
+      "avg_score": 79.0
+    },
+    {
+      "run_name": "layman_run_01",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_01",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 22.6
+    },
+    {
+      "run_name": "layman_run_02",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_02",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 35.9
+    },
+    {
+      "run_name": "layman_run_03",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_03",
+      "total_cases": 20,
+      "passed": 3,
+      "pass_rate": 15.0,
+      "avg_score": 37.4
+    },
+    {
+      "run_name": "layman_run_04",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_04",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 20.7
+    },
+    {
+      "run_name": "layman_run_05",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_05",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 34.4
+    },
+    {
+      "run_name": "layman_run_06",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_06",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 30.1
+    },
+    {
+      "run_name": "layman_run_07",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_07",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 29.5
+    },
+    {
+      "run_name": "layman_run_08",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_08",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 40.6
+    },
+    {
+      "run_name": "layman_run_09",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_09",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 29.8
+    },
+    {
+      "run_name": "layman_run_10",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_10",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 34.4
+    },
+    {
+      "run_name": "layman_run_100",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_100",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 25.3
+    },
+    {
+      "run_name": "layman_run_11",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_11",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 40.6
+    },
+    {
+      "run_name": "layman_run_12",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_12",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 34.6
+    },
+    {
+      "run_name": "layman_run_13",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_13",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 29.5
+    },
+    {
+      "run_name": "layman_run_14",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_14",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 19.4
+    },
+    {
+      "run_name": "layman_run_15",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_15",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 26.9
+    },
+    {
+      "run_name": "layman_run_16",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_16",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 37.2
+    },
+    {
+      "run_name": "layman_run_17",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_17",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 35.9
+    },
+    {
+      "run_name": "layman_run_18",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_18",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 39.0
+    },
+    {
+      "run_name": "layman_run_19",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_19",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 25.4
+    },
+    {
+      "run_name": "layman_run_20",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_20",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 37.3
+    },
+    {
+      "run_name": "layman_run_21",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_21",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 25.1
+    },
+    {
+      "run_name": "layman_run_22",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_22",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 26.8
+    },
+    {
+      "run_name": "layman_run_23",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_23",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 40.2
+    },
+    {
+      "run_name": "layman_run_24",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_24",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 27.0
+    },
+    {
+      "run_name": "layman_run_25",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_25",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 36.3
+    },
+    {
+      "run_name": "layman_run_26",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_26",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 42.3
+    },
+    {
+      "run_name": "layman_run_27",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_27",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 32.8
+    },
+    {
+      "run_name": "layman_run_28",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_28",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 22.5
+    },
+    {
+      "run_name": "layman_run_29",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_29",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 31.3
+    },
+    {
+      "run_name": "layman_run_30",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_30",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 28.8
+    },
+    {
+      "run_name": "layman_run_31",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_31",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 31.2
+    },
+    {
+      "run_name": "layman_run_32",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_32",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 33.2
+    },
+    {
+      "run_name": "layman_run_33",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_33",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 22.3
+    },
+    {
+      "run_name": "layman_run_34",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_34",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 14.4
+    },
+    {
+      "run_name": "layman_run_35",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_35",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 29.6
+    },
+    {
+      "run_name": "layman_run_36",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_36",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 41.2
+    },
+    {
+      "run_name": "layman_run_37",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_37",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 28.9
+    },
+    {
+      "run_name": "layman_run_38",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_38",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 31.6
+    },
+    {
+      "run_name": "layman_run_39",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_39",
+      "total_cases": 20,
+      "passed": 3,
+      "pass_rate": 15.0,
+      "avg_score": 37.8
+    },
+    {
+      "run_name": "layman_run_40",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_40",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 27.3
+    },
+    {
+      "run_name": "layman_run_41",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_41",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 40.4
+    },
+    {
+      "run_name": "layman_run_42",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_42",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 27.0
+    },
+    {
+      "run_name": "layman_run_43",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_43",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 28.3
+    },
+    {
+      "run_name": "layman_run_44",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_44",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 36.6
+    },
+    {
+      "run_name": "layman_run_45",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_45",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 28.0
+    },
+    {
+      "run_name": "layman_run_46",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_46",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 24.4
+    },
+    {
+      "run_name": "layman_run_47",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_47",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 37.5
+    },
+    {
+      "run_name": "layman_run_48",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_48",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 25.3
+    },
+    {
+      "run_name": "layman_run_49",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_49",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 33.5
+    },
+    {
+      "run_name": "layman_run_50",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_50",
+      "total_cases": 20,
+      "passed": 5,
+      "pass_rate": 25.0,
+      "avg_score": 44.2
+    },
+    {
+      "run_name": "layman_run_51",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_51",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 37.4
+    },
+    {
+      "run_name": "layman_run_52",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_52",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 27.0
+    },
+    {
+      "run_name": "layman_run_53",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_53",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 28.6
+    },
+    {
+      "run_name": "layman_run_54",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_54",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 19.6
+    },
+    {
+      "run_name": "layman_run_55",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_55",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 46.4
+    },
+    {
+      "run_name": "layman_run_56",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_56",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 34.4
+    },
+    {
+      "run_name": "layman_run_57",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_57",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 40.6
+    },
+    {
+      "run_name": "layman_run_58",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_58",
+      "total_cases": 20,
+      "passed": 3,
+      "pass_rate": 15.0,
+      "avg_score": 42.0
+    },
+    {
+      "run_name": "layman_run_59",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_59",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 26.6
+    },
+    {
+      "run_name": "layman_run_60",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_60",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 40.8
+    },
+    {
+      "run_name": "layman_run_61",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_61",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 31.2
+    },
+    {
+      "run_name": "layman_run_62",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_62",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 32.7
+    },
+    {
+      "run_name": "layman_run_63",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_63",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 29.6
+    },
+    {
+      "run_name": "layman_run_64",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_64",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 27.2
+    },
+    {
+      "run_name": "layman_run_65",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_65",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 34.2
+    },
+    {
+      "run_name": "layman_run_66",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_66",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 14.5
+    },
+    {
+      "run_name": "layman_run_67",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_67",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 22.7
+    },
+    {
+      "run_name": "layman_run_68",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_68",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 29.7
+    },
+    {
+      "run_name": "layman_run_69",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_69",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 29.4
+    },
+    {
+      "run_name": "layman_run_70",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_70",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 38.9
+    },
+    {
+      "run_name": "layman_run_71",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_71",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 35.7
+    },
+    {
+      "run_name": "layman_run_72",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_72",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 28.1
+    },
+    {
+      "run_name": "layman_run_73",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_73",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 31.1
+    },
+    {
+      "run_name": "layman_run_74",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_74",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 27.9
+    },
+    {
+      "run_name": "layman_run_75",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_75",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 20.9
+    },
+    {
+      "run_name": "layman_run_76",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_76",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 30.1
+    },
+    {
+      "run_name": "layman_run_77",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_77",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 37.6
+    },
+    {
+      "run_name": "layman_run_78",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_78",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 23.8
+    },
+    {
+      "run_name": "layman_run_79",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_79",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 28.5
+    },
+    {
+      "run_name": "layman_run_80",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_80",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 25.5
+    },
+    {
+      "run_name": "layman_run_81",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_81",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 38.8
+    },
+    {
+      "run_name": "layman_run_82",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_82",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 34.7
+    },
+    {
+      "run_name": "layman_run_83",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_83",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 32.9
+    },
+    {
+      "run_name": "layman_run_84",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_84",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 41.1
+    },
+    {
+      "run_name": "layman_run_85",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_85",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 36.3
+    },
+    {
+      "run_name": "layman_run_86",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_86",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 31.6
+    },
+    {
+      "run_name": "layman_run_87",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_87",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 35.6
+    },
+    {
+      "run_name": "layman_run_88",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_88",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 30.0
+    },
+    {
+      "run_name": "layman_run_89",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_89",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 32.7
+    },
+    {
+      "run_name": "layman_run_90",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_90",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 24.9
+    },
+    {
+      "run_name": "layman_run_91",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_91",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 23.6
+    },
+    {
+      "run_name": "layman_run_92",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_92",
+      "total_cases": 20,
+      "passed": 1,
+      "pass_rate": 5.0,
+      "avg_score": 26.7
+    },
+    {
+      "run_name": "layman_run_93",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_93",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 22.4
+    },
+    {
+      "run_name": "layman_run_94",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_94",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 34.7
+    },
+    {
+      "run_name": "layman_run_95",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_95",
+      "total_cases": 20,
+      "passed": 4,
+      "pass_rate": 20.0,
+      "avg_score": 47.1
+    },
+    {
+      "run_name": "layman_run_96",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_96",
+      "total_cases": 20,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_score": 27.4
+    },
+    {
+      "run_name": "layman_run_97",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_97",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 42.0
+    },
+    {
+      "run_name": "layman_run_98",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_98",
+      "total_cases": 20,
+      "passed": 3,
+      "pass_rate": 15.0,
+      "avg_score": 34.5
+    },
+    {
+      "run_name": "layman_run_99",
+      "group": "layman",
+      "predictions_dir": "runs_self_100/layman_run_99",
+      "total_cases": 20,
+      "passed": 2,
+      "pass_rate": 10.0,
+      "avg_score": 34.5
+    },
+    {
+      "run_name": "v1_2_run_01",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_01",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 95.2
+    },
+    {
+      "run_name": "v1_2_run_02",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_02",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 89.1
+    },
+    {
+      "run_name": "v1_2_run_03",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_03",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 93.8
+    },
+    {
+      "run_name": "v1_2_run_04",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_04",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 81.5
+    },
+    {
+      "run_name": "v1_2_run_05",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_05",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 90.7
+    },
+    {
+      "run_name": "v1_2_run_06",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_06",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 91.8
+    },
+    {
+      "run_name": "v1_2_run_07",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_07",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 83.0
+    },
+    {
+      "run_name": "v1_2_run_08",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_08",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 85.4
+    },
+    {
+      "run_name": "v1_2_run_09",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_09",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 91.9
+    },
+    {
+      "run_name": "v1_2_run_10",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_10",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 75.3
+    },
+    {
+      "run_name": "v1_2_run_100",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_100",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 86.9
+    },
+    {
+      "run_name": "v1_2_run_11",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_11",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 91.0
+    },
+    {
+      "run_name": "v1_2_run_12",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_12",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 86.2
+    },
+    {
+      "run_name": "v1_2_run_13",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_13",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 85.5
+    },
+    {
+      "run_name": "v1_2_run_14",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_14",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 84.7
+    },
+    {
+      "run_name": "v1_2_run_15",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_15",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 89.1
+    },
+    {
+      "run_name": "v1_2_run_16",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_16",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 90.9
+    },
+    {
+      "run_name": "v1_2_run_17",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_17",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 91.0
+    },
+    {
+      "run_name": "v1_2_run_18",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_18",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 89.2
+    },
+    {
+      "run_name": "v1_2_run_19",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_19",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 92.4
+    },
+    {
+      "run_name": "v1_2_run_20",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_20",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 90.7
+    },
+    {
+      "run_name": "v1_2_run_21",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_21",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 78.6
+    },
+    {
+      "run_name": "v1_2_run_22",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_22",
+      "total_cases": 20,
+      "passed": 18,
+      "pass_rate": 90.0,
+      "avg_score": 96.8
+    },
+    {
+      "run_name": "v1_2_run_23",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_23",
+      "total_cases": 20,
+      "passed": 19,
+      "pass_rate": 95.0,
+      "avg_score": 97.0
+    },
+    {
+      "run_name": "v1_2_run_24",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_24",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 88.9
+    },
+    {
+      "run_name": "v1_2_run_25",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_25",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 88.5
+    },
+    {
+      "run_name": "v1_2_run_26",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_26",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 93.4
+    },
+    {
+      "run_name": "v1_2_run_27",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_27",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 88.8
+    },
+    {
+      "run_name": "v1_2_run_28",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_28",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 90.8
+    },
+    {
+      "run_name": "v1_2_run_29",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_29",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 83.2
+    },
+    {
+      "run_name": "v1_2_run_30",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_30",
+      "total_cases": 20,
+      "passed": 18,
+      "pass_rate": 90.0,
+      "avg_score": 96.8
+    },
+    {
+      "run_name": "v1_2_run_31",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_31",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 87.5
+    },
+    {
+      "run_name": "v1_2_run_32",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_32",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 83.0
+    },
+    {
+      "run_name": "v1_2_run_33",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_33",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 95.1
+    },
+    {
+      "run_name": "v1_2_run_34",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_34",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 84.8
+    },
+    {
+      "run_name": "v1_2_run_35",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_35",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 82.8
+    },
+    {
+      "run_name": "v1_2_run_36",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_36",
+      "total_cases": 20,
+      "passed": 11,
+      "pass_rate": 55.0,
+      "avg_score": 75.0
+    },
+    {
+      "run_name": "v1_2_run_37",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_37",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 81.3
+    },
+    {
+      "run_name": "v1_2_run_38",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_38",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 89.2
+    },
+    {
+      "run_name": "v1_2_run_39",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_39",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 91.9
+    },
+    {
+      "run_name": "v1_2_run_40",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_40",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 78.3
+    },
+    {
+      "run_name": "v1_2_run_41",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_41",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 93.5
+    },
+    {
+      "run_name": "v1_2_run_42",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_42",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 92.5
+    },
+    {
+      "run_name": "v1_2_run_43",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_43",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 92.5
+    },
+    {
+      "run_name": "v1_2_run_44",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_44",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 85.9
+    },
+    {
+      "run_name": "v1_2_run_45",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_45",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 85.6
+    },
+    {
+      "run_name": "v1_2_run_46",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_46",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 93.2
+    },
+    {
+      "run_name": "v1_2_run_47",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_47",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 88.8
+    },
+    {
+      "run_name": "v1_2_run_48",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_48",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 82.8
+    },
+    {
+      "run_name": "v1_2_run_49",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_49",
+      "total_cases": 20,
+      "passed": 9,
+      "pass_rate": 45.0,
+      "avg_score": 71.7
+    },
+    {
+      "run_name": "v1_2_run_50",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_50",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 87.6
+    },
+    {
+      "run_name": "v1_2_run_51",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_51",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 90.7
+    },
+    {
+      "run_name": "v1_2_run_52",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_52",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 92.2
+    },
+    {
+      "run_name": "v1_2_run_53",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_53",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 90.3
+    },
+    {
+      "run_name": "v1_2_run_54",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_54",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 88.2
+    },
+    {
+      "run_name": "v1_2_run_55",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_55",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 90.5
+    },
+    {
+      "run_name": "v1_2_run_56",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_56",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 90.7
+    },
+    {
+      "run_name": "v1_2_run_57",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_57",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 86.1
+    },
+    {
+      "run_name": "v1_2_run_58",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_58",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 88.0
+    },
+    {
+      "run_name": "v1_2_run_59",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_59",
+      "total_cases": 20,
+      "passed": 18,
+      "pass_rate": 90.0,
+      "avg_score": 96.8
+    },
+    {
+      "run_name": "v1_2_run_60",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_60",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 89.1
+    },
+    {
+      "run_name": "v1_2_run_61",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_61",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 81.2
+    },
+    {
+      "run_name": "v1_2_run_62",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_62",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 90.4
+    },
+    {
+      "run_name": "v1_2_run_63",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_63",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 92.1
+    },
+    {
+      "run_name": "v1_2_run_64",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_64",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 93.7
+    },
+    {
+      "run_name": "v1_2_run_65",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_65",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 83.4
+    },
+    {
+      "run_name": "v1_2_run_66",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_66",
+      "total_cases": 20,
+      "passed": 18,
+      "pass_rate": 90.0,
+      "avg_score": 96.6
+    },
+    {
+      "run_name": "v1_2_run_67",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_67",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 83.0
+    },
+    {
+      "run_name": "v1_2_run_68",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_68",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 87.4
+    },
+    {
+      "run_name": "v1_2_run_69",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_69",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 86.2
+    },
+    {
+      "run_name": "v1_2_run_70",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_70",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 90.6
+    },
+    {
+      "run_name": "v1_2_run_71",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_71",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 88.6
+    },
+    {
+      "run_name": "v1_2_run_72",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_72",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 85.7
+    },
+    {
+      "run_name": "v1_2_run_73",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_73",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 84.2
+    },
+    {
+      "run_name": "v1_2_run_74",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_74",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 93.4
+    },
+    {
+      "run_name": "v1_2_run_75",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_75",
+      "total_cases": 20,
+      "passed": 17,
+      "pass_rate": 85.0,
+      "avg_score": 92.3
+    },
+    {
+      "run_name": "v1_2_run_76",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_76",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 89.0
+    },
+    {
+      "run_name": "v1_2_run_77",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_77",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 92.3
+    },
+    {
+      "run_name": "v1_2_run_78",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_78",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 92.0
+    },
+    {
+      "run_name": "v1_2_run_79",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_79",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 86.1
+    },
+    {
+      "run_name": "v1_2_run_80",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_80",
+      "total_cases": 20,
+      "passed": 12,
+      "pass_rate": 60.0,
+      "avg_score": 81.1
+    },
+    {
+      "run_name": "v1_2_run_81",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_81",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 87.7
+    },
+    {
+      "run_name": "v1_2_run_82",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_82",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 86.3
+    },
+    {
+      "run_name": "v1_2_run_83",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_83",
+      "total_cases": 20,
+      "passed": 19,
+      "pass_rate": 95.0,
+      "avg_score": 97.0
+    },
+    {
+      "run_name": "v1_2_run_84",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_84",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 93.2
+    },
+    {
+      "run_name": "v1_2_run_85",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_85",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 89.1
+    },
+    {
+      "run_name": "v1_2_run_86",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_86",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 91.6
+    },
+    {
+      "run_name": "v1_2_run_87",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_87",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 93.6
+    },
+    {
+      "run_name": "v1_2_run_88",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_88",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 87.0
+    },
+    {
+      "run_name": "v1_2_run_89",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_89",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 83.0
+    },
+    {
+      "run_name": "v1_2_run_90",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_90",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 89.0
+    },
+    {
+      "run_name": "v1_2_run_91",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_91",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 88.9
+    },
+    {
+      "run_name": "v1_2_run_92",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_92",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 84.5
+    },
+    {
+      "run_name": "v1_2_run_93",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_93",
+      "total_cases": 20,
+      "passed": 16,
+      "pass_rate": 80.0,
+      "avg_score": 89.1
+    },
+    {
+      "run_name": "v1_2_run_94",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_94",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 87.4
+    },
+    {
+      "run_name": "v1_2_run_95",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_95",
+      "total_cases": 20,
+      "passed": 14,
+      "pass_rate": 70.0,
+      "avg_score": 86.1
+    },
+    {
+      "run_name": "v1_2_run_96",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_96",
+      "total_cases": 20,
+      "passed": 13,
+      "pass_rate": 65.0,
+      "avg_score": 80.0
+    },
+    {
+      "run_name": "v1_2_run_97",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_97",
+      "total_cases": 20,
+      "passed": 18,
+      "pass_rate": 90.0,
+      "avg_score": 95.3
+    },
+    {
+      "run_name": "v1_2_run_98",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_98",
+      "total_cases": 20,
+      "passed": 15,
+      "pass_rate": 75.0,
+      "avg_score": 87.2
+    },
+    {
+      "run_name": "v1_2_run_99",
+      "group": "v1_2",
+      "predictions_dir": "runs_self_100/v1_2_run_99",
+      "total_cases": 20,
+      "passed": 19,
+      "pass_rate": 95.0,
+      "avg_score": 97.0
+    }
+  ],
+  "meta": {
+    "generation_mode": "self_test_simulation",
+    "generator_script": "scripts/run_self_test.py"
+  }
+}
