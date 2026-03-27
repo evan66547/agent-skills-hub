@@ -1,0 +1,16 @@
+{
+  "risk_level": "HIGH",
+  "identified_vulnerability": "违约金总额封顶条款在根本违约、商业秘密泄露或知识产权侵权场景下可能阻断受损方对实际损失的全额赔偿请求。",
+  "expected_loss_estimation": {
+    "amount_range": "100W - 300W RMB",
+    "calculation_logic": "EL = 发生概率 × 损失中位数；账面违约金显著高估时需考虑司法调减。"
+  },
+  "legal_citations": [
+    {
+      "law_name": "中华人民共和国民法典"
+    }
+  ],
+  "citation_verified": false,
+  "confidence_degrade": "未联网核验法条条号，建议律师二次核验。",
+  "defense_plan_b": "例外排除条款：前述违约金总额限制不适用于因一方根本违约、泄露商业秘密或侵犯知识产权给另一方造成的实际损失。受损方有权依据前述事由要求全额赔偿，不受本条限额约束。"
+}
