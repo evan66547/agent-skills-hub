@@ -22,9 +22,10 @@
 
 ### 核心能力
 
+- 苏格拉底式背景访谈：先问清交易目标、红线、可交换条件、BATNA，再进入改条款。
 - 结构完整性扫描：主体、内容、交易方式、争议处理四模块。
 - 三重交叉审查：约定 vs 法定、现实 vs 理想、条款 vs 条款。
-- Plan B 替代条款：给出可直接替换的防御性条文。
+- Plan B + Plan C：每一项风险都给主方案与备选方案。
 - 风险量化：按 `EL = 概率 × 损失中位数` 输出财务视角风险。
 - 法条防幻觉：低置信度自动降级，禁止编造法条编号。
 
@@ -32,8 +33,8 @@
 
 1. 加载 `SKILL.md` 作为 system prompt。
 2. 输入合同文本/条款片段。
-3. 明确四项上下文：己方立场、法域、合同金额、审查重点。
-4. 获取结构化输出并进入人工复核。
+3. 先完成“交易背景访谈”（目标/红线/BATNA/可交换条件）。
+4. 再获取结构化修改建议（每项风险含主方案 + 备选方案）。
 
 ### 输入建议
 
@@ -56,9 +57,10 @@
 
 ### What It Does
 
+- Uses Socratic questioning to model business context before clause edits.
 - Runs a 4-block structural contract integrity check.
 - Performs 3-pass diagnostics (legal validity, execution feasibility, internal consistency).
-- Produces enforceable Plan B replacement clauses.
+- Produces enforceable Plan B clauses plus fallback Plan C options.
 - Quantifies risk with expected loss (`EL = probability × median loss`).
 - Applies anti-hallucination citation protocol with confidence downgrade.
 
