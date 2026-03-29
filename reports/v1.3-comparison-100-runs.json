@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "runs_per_group": 100,
+    "dataset_size": 20,
+    "groups": [
+      "layman",
+      "expert",
+      "v1_2",
+      "v1_3"
+    ],
+    "generation_mode": "self_test_simulation",
+    "note": "v1.3 includes context-first and fallback-option logic"
+  },
+  "group_summary": {
+    "layman": {
+      "run_count": 100,
+      "mean_avg_score": 28.09,
+      "std_avg_score": 6.93,
+      "mean_pass_rate": 5.15,
+      "std_pass_rate": 4.82
+    },
+    "expert": {
+      "run_count": 100,
+      "mean_avg_score": 72.47,
+      "std_avg_score": 7.19,
+      "mean_pass_rate": 49.25,
+      "std_pass_rate": 10.57
+    },
+    "v1_2": {
+      "run_count": 100,
+      "mean_avg_score": 88.09,
+      "std_avg_score": 4.72,
+      "mean_pass_rate": 75.75,
+      "std_pass_rate": 8.81
+    },
+    "v1_3": {
+      "run_count": 100,
+      "mean_avg_score": 93.99,
+      "std_avg_score": 3.19,
+      "mean_pass_rate": 87.15,
+      "std_pass_rate": 6.41
+    }
+  },
+  "deltas": {
+    "v1_3_minus_v1_2_avg_score": 5.9,
+    "v1_3_minus_v1_2_pass_rate": 11.4
+  }
+}
