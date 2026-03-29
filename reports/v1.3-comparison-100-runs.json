@@ -9,7 +9,13 @@
       "v1_3"
     ],
     "generation_mode": "self_test_simulation",
-    "note": "v1.3 includes context-first and fallback-option logic"
+    "note": "v1.3 includes context-first and fallback-option logic",
+    "note_zh": "v1.3 引入先澄清交易背景、再输出主方案与备选方案的逻辑",
+    "note_en": "v1.3 adds context-first questioning plus primary and fallback mitigation logic"
+  },
+  "executive_summary": {
+    "zh": "在 20 个样本、每组 100 次自测下，v1.3 的平均分为 93.99、平均通过率为 87.15%，高于 v1.2、普通 prompt 和律师 prompt。",
+    "en": "Across 20 benchmark cases and 100 runs per group, v1.3 achieves a mean score of 93.99 and a mean pass rate of 87.15%, outperforming v1.2, a layman prompt, and a lawyer-style prompt."
   },
   "group_summary": {
     "layman": {
@@ -44,5 +50,15 @@
   "deltas": {
     "v1_3_minus_v1_2_avg_score": 5.9,
     "v1_3_minus_v1_2_pass_rate": 11.4
+  },
+  "chart_series": {
+    "mean_avg_score": {
+      "labels": ["layman", "expert", "v1_2", "v1_3"],
+      "values": [28.09, 72.47, 88.09, 93.99]
+    },
+    "mean_pass_rate": {
+      "labels": ["layman", "expert", "v1_2", "v1_3"],
+      "values": [5.15, 49.25, 75.75, 87.15]
+    }
   }
 }

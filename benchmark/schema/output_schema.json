@@ -1,28 +1,28 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "AgentContractReviewOutput",
-  "description": "Output schema for the Senior Legal Contract Reviewer Agent v2.0 benchmark cases.",
+  "title": "AgentContractReviewOutput / 合同审查输出结构",
+  "description": "Output schema for the benchmark cases of the Senior Legal Contract Reviewer Agent. 合同审查基准测试的输出结构。",
   "type": "object",
   "properties": {
     "risk_level": {
       "type": "string",
       "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW", "SAFE"],
-      "description": "Overall risk severity of the analyzed clause."
+      "description": "Overall risk severity of the analyzed clause. 被分析条款的整体风险等级。"
     },
     "identified_vulnerability": {
       "type": "string",
-      "description": "Detailed explanation of the hidden legal or commercial trap."
+      "description": "Detailed explanation of the hidden legal or commercial trap. 对隐藏法律或商业陷阱的详细说明。"
     },
     "expected_loss_estimation": {
       "type": "object",
       "properties": {
         "amount_range": {
           "type": "string",
-          "description": "Estimated financial exposure range (e.g., '100W - 200W RMB')."
+          "description": "Estimated financial exposure range (e.g., '100W - 200W RMB'). 预估风险敞口区间。"
         },
         "calculation_logic": {
           "type": "string",
-          "description": "Logic for calculating EL, including judicial adjustment rules (e.g. 130% rule)."
+          "description": "Logic for calculating EL, including judicial adjustment rules (e.g. 130% rule). EL 计算逻辑，包括司法调减规则。"
         }
       },
       "required": ["amount_range", "calculation_logic"]
@@ -37,19 +37,19 @@
         },
         "required": ["law_name"]
       },
-      "description": "Specific laws or regulations cited as defense basis."
+      "description": "Specific laws or regulations cited as defense basis. 作为审查或防御依据的法律法规。"
     },
     "citation_verified": {
       "type": "boolean",
-      "description": "MUST BE TRUE if the citation was actively verified via RAG/Internet. FALSE if hallucinated or purely from LLM memory."
+      "description": "MUST BE TRUE if the citation was actively verified via RAG/Internet. FALSE if hallucinated or purely from LLM memory. 如法条已主动核验则必须为 TRUE，否则为 FALSE。"
     },
     "confidence_degrade": {
       "type": "string",
-      "description": "If citation_verified is false, explicitly state the memory-degradation warning."
+      "description": "If citation_verified is false, explicitly state the memory-degradation warning. 若未核验法条，需明确写出降级提示。"
     },
     "defense_plan_b": {
       "type": "string",
-      "description": "The mandatory, unyielding replacement clause (Plan B) to protect the user's interests."
+      "description": "The mandatory, unyielding replacement clause (Plan B) to protect the user's interests. 用于保护用户利益的主方案替代条款。"
     }
   },
   "required": [

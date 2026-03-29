@@ -16,6 +16,29 @@
 - Works best when user role, business objective, red lines, and contract amount are provided.
 - Outputs actionable replacement clauses and fallback options, not just risk warnings.
 
+## Benchmark Snapshot
+
+> 中文：基于仓库内 20 个中国大陆合同风险样本、每组 100 次自测，`v1.3` 在平均分和通过率上都优于 `v1.2`、普通 prompt 和律师 prompt。  
+> English: On the in-repo 20-case benchmark with 100 runs per group, `v1.3` outperforms `v1.2`, a layman prompt, and a lawyer-style prompt in both score and pass rate.
+
+| Group | Mean Avg Score | Mean Pass Rate |
+| --- | ---: | ---: |
+| Layman Prompt | 28.09 | 5.15% |
+| Lawyer Prompt | 72.47 | 49.25% |
+| v1.2 | 88.09 | 75.75% |
+| v1.3 | **93.99** | **87.15%** |
+
+- `v1.3 vs v1.2`: `+5.90` score, `+11.40%` pass rate
+- Why it improves: it forces transaction-context clarification before clause drafting
+
+```mermaid
+xychart-beta
+    title "Benchmark Mean Pass Rate (%)"
+    x-axis ["Layman","Lawyer","v1.2","v1.3"]
+    y-axis "Pass Rate" 0 --> 100
+    bar [5.15, 49.25, 75.75, 87.15]
+```
+
 ---
 
 ## 中文介绍

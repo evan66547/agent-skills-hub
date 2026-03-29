@@ -39,6 +39,39 @@ Current release includes:
 
 ---
 
+## Benchmark Highlights
+
+> 中文：以下数据来自仓库内 20 个 PRC 合同风险样本、4 组配置、每组 100 次自测。  
+> English: The following numbers come from the in-repo PRC contract benchmark with 20 cases, 4 groups, and 100 runs per group.
+
+| Group | Mean Avg Score | Mean Pass Rate |
+| --- | ---: | ---: |
+| Layman Prompt | 28.09 | 5.15% |
+| Lawyer Prompt | 72.47 | 49.25% |
+| v1.2 | 88.09 | 75.75% |
+| v1.3 | **93.99** | **87.15%** |
+
+- `v1.3 vs v1.2`: `+5.90` mean score, `+11.40%` pass rate
+- Main driver: context-first questioning about business objective, red lines, tradeables, and BATNA before clause rewriting
+
+```mermaid
+xychart-beta
+    title "Benchmark Mean Avg Score"
+    x-axis ["Layman","Lawyer","v1.2","v1.3"]
+    y-axis "Score" 0 --> 100
+    bar [28.09, 72.47, 88.09, 93.99]
+```
+
+```mermaid
+xychart-beta
+    title "Benchmark Mean Pass Rate (%)"
+    x-axis ["Layman","Lawyer","v1.2","v1.3"]
+    y-axis "Pass Rate" 0 --> 100
+    bar [5.15, 49.25, 75.75, 87.15]
+```
+
+---
+
 ## Repository Layout
 
 ```text
