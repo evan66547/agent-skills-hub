@@ -2,131 +2,51 @@
 
 # Agent Skills Hub
 
-**Open-source repository for production-ready AI agent skills**  
-**面向实战的 AI Agent Skills 开源仓库**
+**A categorized home for reusable AI agent skills**  
+**用于保存、分类和复用 AI Agent Skills 的开源仓库**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Language: ZH/EN](https://img.shields.io/badge/Language-ZH%20%7C%20EN-blue.svg)](./README.zh-CN.md)
-[![Skill: v1.3](https://img.shields.io/badge/Skill-v1.3-orange.svg)](./skills/senior-legal-contract-reviewer-v1.3/SKILL.md)
-[![Release](https://img.shields.io/github/v/release/evan66547/agent-skills-hub?label=Release)](https://github.com/evan66547/agent-skills-hub/releases)
-[![Stars](https://img.shields.io/github/stars/evan66547/agent-skills-hub?label=Stars)](https://github.com/evan66547/agent-skills-hub/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/evan66547/agent-skills-hub?label=Last%20Commit)](https://github.com/evan66547/agent-skills-hub/commits/main)
-
-<a href="./README.md"><img alt="English" src="https://img.shields.io/badge/English-d9d9d9"></a>
-<a href="./README.zh-CN.md"><img alt="简体中文" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
+[![Language: ZH/EN](https://img.shields.io/badge/Language-ZH%2FEN-blue.svg)](./README.zh-CN.md)
 
 </div>
 
 ---
 
-## What is this?
+## Current skill
 
-This repository is dedicated to sharing reusable, high-quality agent skills.
-Current release includes:
+The active catalog currently contains one skill. Its description is derived from the skill's SKILL.md and reference files.
 
-- `senior-legal-contract-reviewer-v1.3` (latest)
-- `senior-legal-contract-reviewer-v1.2` (baseline)
-- Jurisdiction: PRC law (Mainland China)
-- Focus: context-first contract review, Plan B / Plan C clause design, expected loss (EL) estimation
+| Category | Skill | Purpose |
+| --- | --- | --- |
+| Food and consumer safety | [China Food Ingredient & Brand Safety Evaluator](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | Evidence-oriented screening of packaged-food labels, ingredients, nutrition, exposure, current regulatory records, and brand/manufacturer history for products sold in Mainland China. |
 
----
+See the [skill index](./skills/INDEX.md) for inputs, workflow, references, outputs, and limitations.
 
-## Quick Start
+## How to use it
 
-1. Load [`skills/senior-legal-contract-reviewer-v1.3/SKILL.md`](./skills/senior-legal-contract-reviewer-v1.3/SKILL.md) as your agent system instruction.
-2. Provide contract text/snippets plus role, jurisdiction, business objective, red lines, and amount range.
-3. Parse structured output (risk level, vulnerability, Plan B / Plan C clauses, citations, EL estimation).
+1. Read the skill README.
+2. Load its SKILL.md as the agent instruction.
+3. Provide the product label, ingredient list, nutrition panel, producer, batch, and intended frequency when available.
+4. For current purchase or consumption decisions, follow the skill's live-source and retrieval-time requirements.
 
----
+## Source and safety requirements
 
-## Benchmark Highlights
+The skill records source institution, document title, publication/effective date, explicit last-updated date when available, actual retrieval time, URL, supported fact, and verification status.
 
-> 中文：以下数据来自仓库内 20 个 PRC 合同风险样本、4 组配置、每组 100 次自测。  
-> English: The following numbers come from the in-repo PRC contract benchmark with 20 cases, 4 groups, and 100 runs per group.
+It does not replace laboratory testing, medical diagnosis, legal advice, food-safety certification, or a regulator decision. Packaging alone cannot rule out contamination, adulteration, illegal additives, or actual additive concentrations.
 
-| Group | Mean Avg Score | Mean Pass Rate |
-| --- | ---: | ---: |
-| Layman Prompt | 28.09 | 5.15% |
-| Lawyer Prompt | 72.47 | 49.25% |
-| v1.2 | 88.09 | 75.75% |
-| v1.3 | **93.99** | **87.15%** |
-
-- `v1.3 vs v1.2`: `+5.90` mean score, `+11.40%` pass rate
-- Main driver: context-first questioning about business objective, red lines, tradeables, and BATNA before clause rewriting
-
-```mermaid
-xychart-beta
-    title "Benchmark Mean Avg Score"
-    x-axis ["Layman","Lawyer","v1.2","v1.3"]
-    y-axis "Score" 0 --> 100
-    bar [28.09, 72.47, 88.09, 93.99]
-```
-
-```mermaid
-xychart-beta
-    title "Benchmark Mean Pass Rate (%)"
-    x-axis ["Layman","Lawyer","v1.2","v1.3"]
-    y-axis "Pass Rate" 0 --> 100
-    bar [5.15, 49.25, 75.75, 87.15]
-```
-
----
-
-## Repository Layout
+## Structure
 
 ```text
 agent-skills-hub/
 ├── README.md
 ├── README.zh-CN.md
 ├── LICENSE
-├── benchmark/
-│   └── data/
-│       └── test_cases/
-├── examples/
-│   ├── case_a_input.md
-│   └── case_a_output.json
+├── .gitignore
 └── skills/
-    ├── senior-legal-contract-reviewer-v1.2/
-    │   ├── SKILL.md
-    │   └── README.md
-    └── senior-legal-contract-reviewer-v1.3/
-        ├── SKILL.md
-        └── README.md
+    ├── INDEX.md
+    └── food/
+        └── china-food-ingredient-brand-safety-evaluator/
 ```
 
----
-
-## Included Skill
-
-### Senior Legal Contract Reviewer v1.3 (Latest)
-
-- Main skill: [`SKILL.md`](./skills/senior-legal-contract-reviewer-v1.3/SKILL.md)
-- Intro doc: [`README.md`](./skills/senior-legal-contract-reviewer-v1.3/README.md)
-- Benchmark report: [`reports/v1.3-comparison-100-runs.md`](./reports/v1.3-comparison-100-runs.md)
-
-### Senior Legal Contract Reviewer v1.2 (Baseline)
-
-- Main skill: [`SKILL.md`](./skills/senior-legal-contract-reviewer-v1.2/SKILL.md)
-- Intro doc: [`README.md`](./skills/senior-legal-contract-reviewer-v1.2/README.md)
-- Example input: [`examples/case_a_input.md`](./examples/case_a_input.md)
-- Example output: [`examples/case_a_output.json`](./examples/case_a_output.json)
-
----
-
-## Evaluation Reports
-
-- v1.3 100-run comparison: [`reports/v1.3-comparison-100-runs.md`](./reports/v1.3-comparison-100-runs.md)
-- Benchmark dataset: [`benchmark/data/test_cases/README.md`](./benchmark/data/test_cases/README.md)
-- Official single-round comparison: [`reports/v1.2-official-comparison.md`](./reports/v1.2-official-comparison.md)
-- 100-run self-test summary: [`reports/v1.2-self-test-100-runs.md`](./reports/v1.2-self-test-100-runs.md)
-- Raw data (JSON):
-  - [`reports/v1.3-comparison-100-runs.json`](./reports/v1.3-comparison-100-runs.json)
-  - [`reports/v1.2-official-comparison.json`](./reports/v1.2-official-comparison.json)
-  - [`reports/v1.2-self-test-100-runs.json`](./reports/v1.2-self-test-100-runs.json)
-
----
-
-## Notes
-
-- This repository provides drafting and risk-review support, not formal legal advice.
-- For production use, legal outputs should be reviewed by licensed lawyers.
+New skills should use `skills/<category>/<skill-name>/` and add a matching entry to the bilingual README and `skills/INDEX.md`.
