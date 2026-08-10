@@ -25,6 +25,7 @@
 
 - `senior-legal-contract-reviewer-v1.3`（当前主版本）
 - `senior-legal-contract-reviewer-v1.2`（对照基线）
+- `china-food-ingredient-brand-safety-evaluator`（基于证据筛查食品标签、营养及品牌/生产企业记录）
 - 适用法域：中国大陆
 - 核心能力：先澄清交易背景，再输出 Plan B / Plan C 条款与预期损失（EL）估算
 
@@ -88,9 +89,18 @@ agent-skills-hub/
     ├── senior-legal-contract-reviewer-v1.2/
     │   ├── SKILL.md
     │   └── README.md
-    └── senior-legal-contract-reviewer-v1.3/
+    ├── senior-legal-contract-reviewer-v1.3/
+    │   ├── SKILL.md
+    │   └── README.md
+    └── china-food-ingredient-brand-safety-evaluator/
         ├── SKILL.md
-        └── README.md
+        ├── README.md
+        ├── agents/
+        │   └── openai.yaml
+        └── references/
+            ├── evidence-and-regulation.md
+            ├── ingredients-and-nutrition.md
+            └── brand-and-report.md
 ```
 
 ---
@@ -102,6 +112,13 @@ agent-skills-hub/
 - 技能主文件：[`SKILL.md`](./skills/senior-legal-contract-reviewer-v1.3/SKILL.md)
 - 介绍文档：[`README.md`](./skills/senior-legal-contract-reviewer-v1.3/README.md)
 - 对比报告：[`reports/v1.3-comparison-100-runs.md`](./reports/v1.3-comparison-100-runs.md)
+
+### 中国大陆食品成分与品牌安全评估
+
+- 技能主文件：[`SKILL.md`](./skills/china-food-ingredient-brand-safety-evaluator/SKILL.md)
+- 介绍文档：[`README.md`](./skills/china-food-ingredient-brand-safety-evaluator/README.md)
+- 范围：基于公开证据筛查配料、营养、品牌及生产企业记录。
+- 边界：不替代实验室检测、医疗诊断、法律意见或监管机关结论；国际监管差异仅作事实对照。
 
 ### Senior Legal Contract Reviewer v1.2
 

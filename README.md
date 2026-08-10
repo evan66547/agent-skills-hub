@@ -26,6 +26,7 @@ Current release includes:
 
 - `senior-legal-contract-reviewer-v1.3` (latest)
 - `senior-legal-contract-reviewer-v1.2` (baseline)
+- `china-food-ingredient-brand-safety-evaluator` (evidence-oriented food label, nutrition, and brand/manufacturer record screening)
 - Jurisdiction: PRC law (Mainland China)
 - Focus: context-first contract review, Plan B / Plan C clause design, expected loss (EL) estimation
 
@@ -89,9 +90,18 @@ agent-skills-hub/
     ├── senior-legal-contract-reviewer-v1.2/
     │   ├── SKILL.md
     │   └── README.md
-    └── senior-legal-contract-reviewer-v1.3/
+    ├── senior-legal-contract-reviewer-v1.3/
+    │   ├── SKILL.md
+    │   └── README.md
+    └── china-food-ingredient-brand-safety-evaluator/
         ├── SKILL.md
-        └── README.md
+        ├── README.md
+        ├── agents/
+        │   └── openai.yaml
+        └── references/
+            ├── evidence-and-regulation.md
+            ├── ingredients-and-nutrition.md
+            └── brand-and-report.md
 ```
 
 ---
@@ -103,6 +113,13 @@ agent-skills-hub/
 - Main skill: [`SKILL.md`](./skills/senior-legal-contract-reviewer-v1.3/SKILL.md)
 - Intro doc: [`README.md`](./skills/senior-legal-contract-reviewer-v1.3/README.md)
 - Benchmark report: [`reports/v1.3-comparison-100-runs.md`](./reports/v1.3-comparison-100-runs.md)
+
+### China Food Ingredient & Brand Safety Evaluator
+
+- Main skill: [`SKILL.md`](./skills/china-food-ingredient-brand-safety-evaluator/SKILL.md)
+- Intro doc: [`README.md`](./skills/china-food-ingredient-brand-safety-evaluator/README.md)
+- Scope: evidence-oriented screening of food labels, nutrition, and brand/manufacturer records.
+- Guardrails: not laboratory testing, medical diagnosis, legal advice, or a political/regulatory judgment.
 
 ### Senior Legal Contract Reviewer v1.2 (Baseline)
 
