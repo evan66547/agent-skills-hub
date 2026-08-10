@@ -51,7 +51,7 @@ agent-skills-hub/
 
 ## Archive
 
-Historical contract-review benchmark, examples, and reports are preserved under [`archive/contract-review-benchmark/`](./archive/contract-review-benchmark/). They are reference material only, not active skills.
+Historical contract-review benchmark, examples, and reports are preserved under [`archive/contract-review-benchmark/`](./archive/contract-review-benchmark/README.md). They are reference material only, not active skills.
 
 ## License and responsibility
 

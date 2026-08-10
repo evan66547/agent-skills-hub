@@ -50,7 +50,7 @@ agent-skills-hub/
 
 ## 历史资料
 
-历史合同审核测评、示例和报告保存在 [`archive/contract-review-benchmark/`](./archive/contract-review-benchmark/)，仅作参考，不代表当前有效 Skill。
+历史合同审核测评、示例和报告保存在 [`archive/contract-review-benchmark/`](./archive/contract-review-benchmark/README.md)，仅作参考，不代表当前有效 Skill。
 
 ## 许可与责任
 
