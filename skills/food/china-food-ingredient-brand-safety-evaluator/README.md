@@ -2,6 +2,12 @@
 
 中国大陆食品成分与品牌安全评估 Skill
 
+| Field | Value |
+| --- | --- |
+| Category | Food / 食品与消费安全 |
+| Status | Active skill / 当前有效 |
+| Data freshness | Verify current sources and retrieval time at use / 使用时核验当前来源与检索时间 |
+
 ## TL;DR
 
 A cautious, evidence-oriented assistant for screening packaged-food labels, nutrition, brand history, and manufacturer records relevant to products sold in Mainland China. It separates current regulatory status, realistic exposure, long-term nutrition, and brand or factory history instead of collapsing them into an absolute “safe” or “unsafe” claim.

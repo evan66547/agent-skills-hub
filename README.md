@@ -2,37 +2,39 @@
 
 # Agent Skills Hub
 
-**Open-source repository for reusable AI agent skills**  
+**A categorized home for reusable AI agent skills**  
 **用于保存、分类和复用 AI Agent Skills 的开源仓库**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Language: ZH/EN](https://img.shields.io/badge/Language-ZH%20%7C%20EN-blue.svg)](./README.zh-CN.md)
+[![Language: ZH/EN](https://img.shields.io/badge/Language-ZH%2FEN-blue.svg)](./README.zh-CN.md)
 
 </div>
 
 ---
 
-## What is this?
+## Catalog
 
-Agent Skills Hub stores reusable skills in type-based directories. Each skill keeps its main SKILL.md, an optional introduction, and supporting references together.
+Active skills are organized under `skills/<category>/<skill-name>/`. Browse the [full catalog](./skills/INDEX.md) or open a skill README before loading its SKILL.md.
 
-## Skill catalog
+| Category | Skill | Status |
+| --- | --- | --- |
+| Food | [China Food Ingredient & Brand Safety Evaluator](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | Active |
 
-Skills live under `skills/<category>/<skill-name>/`. Add a new category only when a real skill needs it.
-
-### Food
-
-- [China Food Ingredient & Brand Safety Evaluator](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md)
-  - Evidence-oriented screening of food labels, nutrition, and brand/manufacturer records.
-  - Not laboratory testing, medical diagnosis, legal advice, food-safety certification, or a regulator decision.
-
-## Quick start
+## How to use a skill
 
 1. Choose a skill from the catalog.
-2. Load its SKILL.md as the agent instruction.
-3. Read the skill README and references when the task requires them.
+2. Read its README for scope, inputs, references, and limitations.
+3. Load the skill's SKILL.md as the agent instruction.
+4. For current or high-impact questions, follow the skill's source-verification rules and record the retrieval time.
 
-## Repository layout
+## Repository conventions
+
+- One active skill per directory under `skills/<category>/<skill-name>/`.
+- Keep SKILL.md, README.md, optional `agents/`, and task-specific `references/` together.
+- Describe scope and limitations factually; avoid absolute safety, legal, medical, or performance claims.
+- Treat changing information as time-sensitive and preserve source links, source dates, explicit last-updated dates when available, and actual retrieval timestamps.
+
+## Layout
 
 ```text
 agent-skills-hub/
@@ -40,23 +42,17 @@ agent-skills-hub/
 ├── README.zh-CN.md
 ├── LICENSE
 ├── skills/
+│   ├── INDEX.md
 │   └── food/
 │       └── china-food-ingredient-brand-safety-evaluator/
-│           ├── SKILL.md
-│           ├── README.md
-│           ├── agents/
-│           └── references/
-├── benchmark/
-├── examples/
-└── reports/
+└── archive/
+    └── contract-review-benchmark/
 ```
 
-The benchmark, examples, and reports directories are retained as historical evaluation material. They are not active contract-review skills.
+## Archive
 
-## Contribution convention
+Historical contract-review benchmark, examples, and reports are preserved under [`archive/contract-review-benchmark/`](./archive/contract-review-benchmark/). They are reference material only, not active skills.
 
-Use one directory per skill. Keep the public description factual, state limitations clearly, avoid absolute safety or performance claims, and link to current primary sources when the skill depends on changing information.
-
-## Notes
+## License and responsibility
 
 This repository provides reusable agent instructions and research support. Users remain responsible for checking current sources and obtaining qualified professional advice when a situation requires it.
