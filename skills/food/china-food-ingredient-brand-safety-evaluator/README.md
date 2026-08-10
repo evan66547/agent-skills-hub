@@ -12,6 +12,7 @@ A cautious, evidence-oriented assistant for screening packaged-food labels, nutr
 
 - Transcribes and normalizes label information, including ingredients, nutrition, dates, batch identifiers, producer and SC information when available.
 - Checks current primary-source regulatory material and records the issuer, document date, geography, product category, and verification status.
+- Makes material claims auditable with the source URL, publication/effective date, explicit last-updated date when available, and the actual retrieval timestamp.
 - Explains dose, exposure, ADME (absorption, distribution, metabolism, and excretion), special-population considerations, and evidence strength.
 - Searches recent official recalls, sampling notices, and enforcement records, separating product/batch events from factory-level or system-level patterns.
 - Produces one of four conclusions: lower risk, medium risk/caution, high risk/avoid, or information insufficient.
@@ -50,7 +51,7 @@ This directory is released under the repository license. It is intended for cons
 
 ### 适用场景
 
-适合用于购买前的标签核对、重点成分的证据整理、营养结构筛查，以及品牌与实际生产企业的公开记录检索。输出会明确证据等级、资料截止时间和信息缺口。
+适合用于购买前的标签核对、重点成分的证据整理、营养结构筛查，以及品牌与实际生产企业的公开记录检索。输出会明确证据等级、资料来源、来源日期或生效日期、实际检索时间、核验状态和信息缺口；来源未提供更新时间时会明确写明。
 
 ### 风险边界
 
