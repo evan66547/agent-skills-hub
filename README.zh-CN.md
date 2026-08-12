@@ -5,7 +5,7 @@
 **用于保存、分类与复用 AI Agent Skills 的开源仓库**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-2-blue.svg)](./skills/INDEX.md)
+[![Skills](https://img.shields.io/badge/Skills-3-blue.svg)](./skills/INDEX.md)
 [![English](https://img.shields.io/badge/Docs-English-blue.svg)](./README.md)
 
 </div>
@@ -43,6 +43,7 @@
 | --- | --- | --- |
 | 食品与消费安全 | [中国大陆食品成分与品牌安全评估](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | 面向中国大陆销售的预包装食品，基于证据筛查标签、配料、营养、暴露、当前监管记录及品牌/生产企业记录 |
 | 技术与工程 | [AI 技术可行性评估专家](./skills/tech/ai-tech-evaluator/README.md) | 基于实时检索判断 AI 需求「今天能否落地」：五维诊断、梯次方案与可执行教程（自 [ai-learning-skills](https://github.com/evan66547/ai-learning-skills) 优化迁入） |
+| 法律工作流 | [中文催款函生成](./skills/legal/demand-letter-generator/README.md) | 本地合同/发票/模板生成催款函：确认闸门、欠款违约金、保留 Word 格式、依据归档（自 [evan-agent-skills](https://github.com/evan66547/evan-agent-skills) 优化迁入） |
 
 完整索引（输入、流程、输出、边界）：**[skills/INDEX.md](./skills/INDEX.md)**
 
@@ -73,11 +74,10 @@ agent-skills-hub/
 └── skills/
     ├── INDEX.md              # 当前有效 Skill 目录
     ├── food/                 # 分类：食品与消费安全
-    │   ├── README.md
-    │   └── china-food-ingredient-brand-safety-evaluator/
-    └── tech/                 # 分类：技术与工程
+    ├── tech/                 # 分类：技术与工程
+    └── legal/                # 分类：法律工作流
         ├── README.md
-        └── ai-tech-evaluator/
+        └── demand-letter-generator/
             ├── README.md     # Skill 介绍（中英）
             ├── SKILL.md      # Agent 主指令
             ├── agents/       # 可选宿主元数据（如 OpenAI）

@@ -90,6 +90,49 @@ Not investment, legal, compliance, or procurement advice; must not invent APIs, 
 
 ---
 
+## Legal / 法律工作流
+
+Category intro: [legal/README.md](./legal/README.md)
+
+### Demand Letter Generator  
+### 中文催款函生成与归档
+
+| | |
+| --- | --- |
+| **Path / 路径** | [`legal/demand-letter-generator/`](./legal/demand-letter-generator/) |
+| **Main / 主文件** | [SKILL.md](./legal/demand-letter-generator/SKILL.md) |
+| **Intro / 介绍** | [README.md](./legal/demand-letter-generator/README.md) |
+| **References / 参考** | [evidence-and-amounts.md](./legal/demand-letter-generator/references/evidence-and-amounts.md) · [docx-and-archive.md](./legal/demand-letter-generator/references/docx-and-archive.md) |
+| **Status / 状态** | Active / 当前有效 |
+| **Origin / 来源** | Optimized from [evan-agent-skills](https://github.com/evan66547/evan-agent-skills) / 自该仓库优化迁入 |
+
+**Purpose / 用途**
+
+Draft, update, check, and archive Chinese 催款函 from local contracts, invoices, screenshots, and template DOCX—with confirmation gates for amounts and entities.  
+根据本地合同、发票、截图与模板 DOCX 起草、修改、检查并归档中文催款函，对金额与主体实行确认闸门。
+
+**Inputs / 输入**
+
+Local case folder: contracts, invoices, payment proofs, screenshots, reference DOCX; user confirmations for principal, letter date, sender, collection account when needed.  
+本地案卷：合同、发票、付款凭证、截图、参考 DOCX；必要时用户确认本金、函件日期、发函主体、收款账户。
+
+**Outputs / 输出**
+
+`催款函-债务人名称.docx`, optional `依据/` archive, case folder rename pattern, verification summary.  
+终稿 DOCX、可选 `依据/` 归档、案卷命名、核验摘要。
+
+**Freshness / 时效**
+
+LPR-based penalty only after user choice and live official rate lookup.  
+仅在用户选定且实时查询官方 LPR 后才可按 LPR 计违约金。
+
+**Boundary / 边界**
+
+Not licensed legal advice, formal lawyer letterhead, or process service; no default private archive path; do not edit source evidence.  
+不构成执业律师意见、正式律师函要求或送达程序；无默认私有归档路径；不改动源证据。
+
+---
+
 ## Adding a skill / 新增 Skill
 
 1. Place the skill at `skills/<category>/<skill-name>/`.  
