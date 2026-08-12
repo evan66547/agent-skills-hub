@@ -5,7 +5,7 @@
 **用于保存、分类与复用 AI Agent Skills 的开源仓库**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-1-blue.svg)](./skills/INDEX.md)
+[![Skills](https://img.shields.io/badge/Skills-2-blue.svg)](./skills/INDEX.md)
 [![English](https://img.shields.io/badge/Docs-English-blue.svg)](./README.md)
 
 </div>
@@ -42,6 +42,7 @@
 | 分类 | Skill | 主要用途 |
 | --- | --- | --- |
 | 食品与消费安全 | [中国大陆食品成分与品牌安全评估](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | 面向中国大陆销售的预包装食品，基于证据筛查标签、配料、营养、暴露、当前监管记录及品牌/生产企业记录 |
+| 技术与工程 | [AI 技术可行性评估专家](./skills/tech/ai-tech-evaluator/README.md) | 基于实时检索判断 AI 需求「今天能否落地」：五维诊断、梯次方案与可执行教程（自 [ai-learning-skills](https://github.com/evan66547/ai-learning-skills) 优化迁入） |
 
 完整索引（输入、流程、输出、边界）：**[skills/INDEX.md](./skills/INDEX.md)**
 
@@ -71,9 +72,12 @@ agent-skills-hub/
 ├── .gitignore
 └── skills/
     ├── INDEX.md              # 当前有效 Skill 目录
-    └── food/                 # 分类：食品与消费安全
+    ├── food/                 # 分类：食品与消费安全
+    │   ├── README.md
+    │   └── china-food-ingredient-brand-safety-evaluator/
+    └── tech/                 # 分类：技术与工程
         ├── README.md
-        └── china-food-ingredient-brand-safety-evaluator/
+        └── ai-tech-evaluator/
             ├── README.md     # Skill 介绍（中英）
             ├── SKILL.md      # Agent 主指令
             ├── agents/       # 可选宿主元数据（如 OpenAI）

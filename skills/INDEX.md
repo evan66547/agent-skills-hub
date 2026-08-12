@@ -47,6 +47,49 @@ Does not replace laboratory testing, medical diagnosis, legal advice, food-safet
 
 ---
 
+## Tech / 技术与工程
+
+Category intro: [tech/README.md](./tech/README.md)
+
+### AI Tech Evaluator  
+### AI 技术可行性评估专家
+
+| | |
+| --- | --- |
+| **Path / 路径** | [`tech/ai-tech-evaluator/`](./tech/ai-tech-evaluator/) |
+| **Main / 主文件** | [SKILL.md](./tech/ai-tech-evaluator/SKILL.md) |
+| **Intro / 介绍** | [README.md](./tech/ai-tech-evaluator/README.md) |
+| **References / 参考** | [report-and-ops.md](./tech/ai-tech-evaluator/references/report-and-ops.md) · [prompt-lite.md](./tech/ai-tech-evaluator/references/prompt-lite.md) · [gemini-gem.md](./tech/ai-tech-evaluator/references/gemini-gem.md) |
+| **Status / 状态** | Active / 当前有效 |
+| **Origin / 来源** | Optimized from [ai-learning-skills](https://github.com/evan66547/ai-learning-skills) / 自该仓库优化迁入 |
+
+**Purpose / 用途**
+
+Judge whether an AI product or workflow is feasible **as of the evaluation day**: live research, five-dimension diagnosis, tiered implementation plans (or red-light fallbacks), and executable tutorials.  
+判断 AI 产品/工作流在**评估当日**是否可行：实时检索、五维诊断、梯次落地方案（或不可行时的过渡路径）与可执行教程。
+
+**Inputs / 输入**
+
+Goal in plain language; optional: industry, skill level, deadline, budget band, privacy constraints, existing stack, success metrics.  
+目标描述；可选：行业、技术水平、截止时间、预算量级、隐私约束、现有技术栈、成功标准。
+
+**Outputs / 输出**
+
+Executive summary, 5D matrix, three maturity-ordered options or blockers + transitions, architecture sketch, step-by-step tutorial, source labels.  
+执行摘要、五维矩阵、三档方案或阻塞点+过渡路径、架构说明、分步教程、来源标注。
+
+**Freshness / 时效**
+
+Feasibility and stack recommendations require live search; conclusions bind to the evaluation date.  
+可行性与技术栈推荐须实时检索；结论绑定评估日期。
+
+**Boundary / 边界**
+
+Not investment, legal, compliance, or procurement advice; must not invent APIs, repos, or benchmarks.  
+不构成投资、法律、合规或采购建议；禁止虚构 API、仓库或基准数据。
+
+---
+
 ## Adding a skill / 新增 Skill
 
 1. Place the skill at `skills/<category>/<skill-name>/`.  

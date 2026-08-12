@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 技术可行性评估"
+  short_description: "实时检索校准基线：五维诊断、梯次方案与可执行落地教程"
+  default_prompt: "使用 $ai-tech-evaluator 评估我的需求在今天的 AI 技术下是否可行，给出五维诊断、方案对比与实施步骤。先澄清关键约束，并基于实时搜索作答。"

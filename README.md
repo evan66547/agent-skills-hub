@@ -5,7 +5,7 @@
 **A categorized open repository for reusable AI agent skills**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-1-blue.svg)](./skills/INDEX.md)
+[![Skills](https://img.shields.io/badge/Skills-2-blue.svg)](./skills/INDEX.md)
 [![中文](https://img.shields.io/badge/文档-中文-red.svg)](./README.zh-CN.md)
 
 </div>
@@ -42,6 +42,7 @@ Reusable agent behavior is often buried in long prompts, private notes, or one-o
 | Category | Skill | Purpose |
 | --- | --- | --- |
 | Food & consumer safety | [China Food Ingredient & Brand Safety Evaluator](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | Evidence-oriented screening of packaged-food labels, ingredients, nutrition, exposure, current regulatory records, and brand/manufacturer history for products sold in Mainland China |
+| Tech & engineering | [AI Tech Evaluator](./skills/tech/ai-tech-evaluator/README.md) | Live-research feasibility diagnosis for AI products and agents: five dimensions, tiered plans, executable tutorials (optimized from [ai-learning-skills](https://github.com/evan66547/ai-learning-skills)) |
 
 Full index (inputs, workflow, outputs, limits): **[skills/INDEX.md](./skills/INDEX.md)**
 
@@ -71,9 +72,12 @@ agent-skills-hub/
 ├── .gitignore
 └── skills/
     ├── INDEX.md              # Catalog of active skills
-    └── food/                 # Category: food & consumer safety
+    ├── food/                 # Category: food & consumer safety
+    │   ├── README.md
+    │   └── china-food-ingredient-brand-safety-evaluator/
+    └── tech/                 # Category: tech & engineering
         ├── README.md
-        └── china-food-ingredient-brand-safety-evaluator/
+        └── ai-tech-evaluator/
             ├── README.md     # Skill introduction (EN + 中文)
             ├── SKILL.md      # Main agent instruction
             ├── agents/       # Optional host metadata (e.g. OpenAI)
