@@ -1,4 +1,4 @@
 interface:
   display_name: "中国大陆食品成分与品牌安全评估"
-  short_description: "循证评估中国大陆食品成分、营养、品牌记录与长期食用风险"
-  default_prompt: "使用 $china-food-ingredient-brand-safety-evaluator 评估这款食品的配料、营养、品牌及长期食用风险。"
+  short_description: "循证筛查中国大陆预包装食品：配料、营养、监管记录、品牌/工厂与长期食用风险"
+  default_prompt: "使用 $china-food-ingredient-brand-safety-evaluator，根据包装标签评估这款食品的配料、营养、当前监管/召回状态、品牌与工厂记录及长期食用风险。输出须含来源与实际检索时间，不得替代检测或医疗诊断。"

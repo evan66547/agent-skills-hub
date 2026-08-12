@@ -2,51 +2,142 @@
 
 # Agent Skills Hub
 
-**A categorized home for reusable AI agent skills**  
-**用于保存、分类和复用 AI Agent Skills 的开源仓库**
+**A categorized open repository for reusable AI agent skills**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Language: ZH/EN](https://img.shields.io/badge/Language-ZH%2FEN-blue.svg)](./README.zh-CN.md)
+[![Skills](https://img.shields.io/badge/Skills-1-blue.svg)](./skills/INDEX.md)
+[![中文](https://img.shields.io/badge/文档-中文-red.svg)](./README.zh-CN.md)
 
 </div>
 
 ---
 
-## Current skill
+## What is this?
 
-The active catalog currently contains one skill. Its description is derived from the skill's SKILL.md and reference files.
+**Agent Skills Hub** collects portable, self-contained **Agent Skills** that any AI agent (Claude, Codex, Cursor, OpenAI Agents, and similar tools) can load as instructions.
+
+Each skill is a folder of Markdown (and optional metadata) that defines:
+
+- **When** the skill should run
+- **What** the agent must do
+- **How** to use references, tools, and evidence
+- **What not** to claim (boundaries and safety)
+
+This is not a runtime, SaaS product, or model marketplace. It is a **versioned knowledge catalog** you can clone, fork, or copy into your own agent workspace.
+
+## Why it exists
+
+Reusable agent behavior is often buried in long prompts, private notes, or one-off chats. Skills turn that into:
+
+| Principle | Meaning |
+| --- | --- |
+| **Portable** | Works as files; no proprietary lock-in |
+| **Auditable** | Instructions and references stay human-readable |
+| **Composable** | One skill per folder; load only what you need |
+| **Evidence-first** | Prefer primary sources, dates, and verification status over model memory |
+| **Bounded** | Explicit non-goals and disclaimers reduce overclaiming |
+
+## Current catalog
 
 | Category | Skill | Purpose |
 | --- | --- | --- |
-| Food and consumer safety | [China Food Ingredient & Brand Safety Evaluator](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | Evidence-oriented screening of packaged-food labels, ingredients, nutrition, exposure, current regulatory records, and brand/manufacturer history for products sold in Mainland China. |
+| Food & consumer safety | [China Food Ingredient & Brand Safety Evaluator](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | Evidence-oriented screening of packaged-food labels, ingredients, nutrition, exposure, current regulatory records, and brand/manufacturer history for products sold in Mainland China |
 
-See the [skill index](./skills/INDEX.md) for inputs, workflow, references, outputs, and limitations.
+Full index (inputs, workflow, outputs, limits): **[skills/INDEX.md](./skills/INDEX.md)**
 
-## How to use it
+## Quick start
 
-1. Read the skill README.
-2. Load its SKILL.md as the agent instruction.
-3. Provide the product label, ingredient list, nutrition panel, producer, batch, and intended frequency when available.
-4. For current purchase or consumption decisions, follow the skill's live-source and retrieval-time requirements.
+1. Open the skill folder under `skills/<category>/<skill-name>/`.
+2. Read its `README.md` for scope, inputs, and limits.
+3. Load `SKILL.md` as the agent system/instruction prompt (or attach it in your tool’s skill loader).
+4. When the skill references files under `references/`, load them as needed for the task.
+5. Provide the inputs the skill expects (photos, text, identifiers, context).
 
-## Source and safety requirements
+Example (food safety skill):
 
-The skill records source institution, document title, publication/effective date, explicit last-updated date when available, actual retrieval time, URL, supported fact, and verification status.
+```text
+Load skills/food/china-food-ingredient-brand-safety-evaluator/SKILL.md
+and evaluate this product from the label photos I attach.
+```
 
-It does not replace laboratory testing, medical diagnosis, legal advice, food-safety certification, or a regulator decision. Packaging alone cannot rule out contamination, adulteration, illegal additives, or actual additive concentrations.
-
-## Structure
+## Repository layout
 
 ```text
 agent-skills-hub/
-├── README.md
-├── README.zh-CN.md
-├── LICENSE
+├── README.md                 # English overview (this file)
+├── README.zh-CN.md           # Chinese overview
+├── CONTRIBUTING.md           # How to add or improve skills
+├── LICENSE                   # MIT
 ├── .gitignore
 └── skills/
-    ├── INDEX.md
-    └── food/
+    ├── INDEX.md              # Catalog of active skills
+    └── food/                 # Category: food & consumer safety
+        ├── README.md
         └── china-food-ingredient-brand-safety-evaluator/
+            ├── README.md     # Skill introduction (EN + 中文)
+            ├── SKILL.md      # Main agent instruction
+            ├── agents/       # Optional host metadata (e.g. OpenAI)
+            └── references/   # Progressive-disclosure detail docs
 ```
 
-New skills should use `skills/<category>/<skill-name>/` and add a matching entry to the bilingual README and `skills/INDEX.md`.
+## Skill packaging conventions
+
+Every skill should include at least:
+
+| File | Role |
+| --- | --- |
+| `SKILL.md` | Main instruction (YAML frontmatter + body) |
+| `README.md` | Human-facing intro: purpose, inputs, outputs, limits |
+| `references/*` | Optional deep rules loaded only when needed |
+
+**Frontmatter (recommended):**
+
+```yaml
+---
+name: skill-folder-name
+description: One paragraph — when to use this skill, what it does, key constraints.
+---
+```
+
+**Naming:**
+
+- Category: short English noun path, e.g. `food`, `legal`, `research`
+- Skill folder: lowercase kebab-case, e.g. `china-food-ingredient-brand-safety-evaluator`
+- Path: `skills/<category>/<skill-name>/`
+
+After adding a skill, update:
+
+1. `skills/INDEX.md`
+2. Category `README.md` (if present)
+3. Root `README.md` and `README.zh-CN.md` catalog tables
+
+See **[CONTRIBUTING.md](./CONTRIBUTING.md)** for the full checklist.
+
+## Quality bar for skills in this hub
+
+- **Task-scoped** — solves a clear user job, not a vague “be helpful” persona
+- **Progressive disclosure** — core rules in `SKILL.md`; detail in `references/`
+- **Evidence & freshness** — live decisions must cite sources, dates, and retrieval time when applicable
+- **Honest boundaries** — no pretending to be lab tests, medical diagnosis, legal opinions, or regulator decisions unless the skill is explicitly that domain *and* still disclaims appropriately
+- **Privacy-aware** — do not instruct uploading unnecessary personal or third-party sensitive data
+- **Bilingual welcome** — Chinese skills should ship a Chinese intro; English hub docs stay complete
+
+## What this repo is not
+
+- Not a list of API keys, scraped datasets, or bulk training corpora
+- Not legal, medical, or food-safety certification
+- Not an endorsement of any brand, product, or jurisdiction
+- Not a place for unfinished personal notes unrelated to a loadable skill
+
+## License
+
+[MIT](./LICENSE) © 2026 evan66547
+
+You may use, modify, and redistribute skills under MIT. You remain responsible for how agents apply them and for checking current official sources when making real-world decisions.
+
+## Links
+
+- [中文说明](./README.zh-CN.md)
+- [Skill catalog](./skills/INDEX.md)
+- [Contributing](./CONTRIBUTING.md)
+- [GitHub](https://github.com/evan66547/agent-skills-hub)
