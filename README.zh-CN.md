@@ -43,7 +43,7 @@
 | --- | --- | --- |
 | 食品与消费安全 | [中国大陆食品成分与品牌安全评估](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | 面向中国大陆销售的预包装食品，基于证据筛查标签、配料、营养、暴露、当前监管记录及品牌/生产企业记录 |
 | 技术与工程 | [AI 技术可行性评估专家](./skills/tech/ai-tech-evaluator/README.md) | 基于实时检索判断 AI 需求「今天能否落地」：五维诊断、梯次方案与可执行教程（自 [ai-learning-skills](https://github.com/evan66547/ai-learning-skills) 优化迁入） |
-| 技术与工程 | [Codex agy](./skills/tech/codex-agy/README.md) | 在 Ghostty 中可见运行 Antigravity CLI，安全注入任务、保护单会话并独立核验 Git 与测试 |
+| 技术与工程 | [Codex agy](./skills/tech/codex-agy/README.md) | 在 Ghostty、iTerm2 或 Terminal.app 中可见运行 Antigravity CLI，安全注入任务、保护单会话并独立核验 Git 与测试 |
 | 法律工作流 | [中文催款函生成](./skills/legal/demand-letter-generator/README.md) | 本地合同/发票/模板生成催款函：确认闸门、欠款违约金、保留 Word 格式、依据归档（自 [evan-agent-skills](https://github.com/evan66547/evan-agent-skills) 优化迁入） |
 
 完整索引（输入、流程、输出、边界）：**[skills/INDEX.md](./skills/INDEX.md)**

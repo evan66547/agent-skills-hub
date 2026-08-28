@@ -8,7 +8,7 @@ Skills that help agents **evaluate, design, and land technical work**—especial
 | Skill | Focus / 侧重点 |
 | --- | --- |
 | [ai-tech-evaluator](./ai-tech-evaluator/README.md) | Feasibility of AI products/agents “as of today”: research, 5D diagnosis, tiered plans, tutorials / 「今天能否实现」：检索、五维诊断、梯次方案与教程 |
-| [codex-agy](./codex-agy/README.md) | Visible, safe Antigravity CLI workflow in Ghostty with input-method-safe task injection and independent Git/test verification / 在 Ghostty 中可见、安全运行 agy，规避输入法干扰并独立核验 Git 与测试 |
+| [codex-agy](./codex-agy/README.md) | Visible, safe Antigravity CLI workflow with Ghostty/iTerm2/Terminal.app fallback, input-method-safe task injection, and independent Git/test verification / 在 Ghostty、iTerm2 或 Terminal.app 中可见、安全运行 agy，规避输入法干扰并独立核验 Git 与测试 |
 
 ## Shared expectations / 共同约定
 

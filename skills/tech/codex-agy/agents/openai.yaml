@@ -1,4 +1,4 @@
 interface:
   display_name: "Codex agy"
-  short_description: "通过 Ghostty 可见安全运行 Antigravity CLI 并核验结果"
-  default_prompt: "Use $codex-agy to run the authorized task visibly in Ghostty and verify the outcome."
+  short_description: "通过可用终端可见安全运行 Antigravity CLI 并核验结果"
+  default_prompt: "Use $codex-agy to run the authorized task visibly in Ghostty, iTerm2, Terminal.app, or the current terminal, then verify the outcome."

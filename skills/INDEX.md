@@ -100,8 +100,8 @@ Not investment, legal, compliance, or procurement advice; must not invent APIs, 
 
 **Purpose / 用途**
 
-Visible, safe execution of the local Antigravity CLI (`agy`) in Ghostty, with input-method-safe prompt injection and independent Git/test verification.
-在 Ghostty 中可见、安全地运行本机 Antigravity CLI（`agy`），规避中文输入法干扰，并独立核验 Git、差异和测试结果。
+Visible, safe execution of the local Antigravity CLI (`agy`) in Ghostty, iTerm2, Terminal.app, or the current terminal, with input-method-safe prompt injection and independent Git/test verification.
+在 Ghostty、iTerm2、Terminal.app 或当前终端中可见、安全地运行本机 Antigravity CLI（`agy`），规避中文输入法干扰，并独立核验 Git、差异和测试结果。
 
 **Inputs / 输入**
 
@@ -110,8 +110,8 @@ Work directory, approved agy options, non-sensitive task prompt, acceptance crit
 
 **Outputs / 输出**
 
-Ghostty-visible execution plus stage reports grounded in process state, Git status, diffs, and tests.
-Ghostty 中可见的执行过程，以及基于进程、Git 状态、差异和测试的阶段核验报告。
+Terminal-visible execution plus stage reports grounded in process state, Git status, diffs, and tests.
+目标终端中可见的执行过程，以及基于进程、Git 状态、差异和测试的阶段核验报告。
 
 **Boundary / 边界**
 

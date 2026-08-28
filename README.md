@@ -43,7 +43,7 @@ Reusable agent behavior is often buried in long prompts, private notes, or one-o
 | --- | --- | --- |
 | Food & consumer safety | [China Food Ingredient & Brand Safety Evaluator](./skills/food/china-food-ingredient-brand-safety-evaluator/README.md) | Evidence-oriented screening of packaged-food labels, ingredients, nutrition, exposure, current regulatory records, and brand/manufacturer history for products sold in Mainland China |
 | Tech & engineering | [AI Tech Evaluator](./skills/tech/ai-tech-evaluator/README.md) | Live-research feasibility diagnosis for AI products and agents: five dimensions, tiered plans, executable tutorials (optimized from [ai-learning-skills](https://github.com/evan66547/ai-learning-skills)) |
-| Tech & engineering | [Codex agy](./skills/tech/codex-agy/README.md) | Visible Ghostty workflow for Antigravity CLI, safe prompt injection, single-session protection, and independent Git/test verification |
+| Tech & engineering | [Codex agy](./skills/tech/codex-agy/README.md) | Visible Ghostty/iTerm2/Terminal.app workflow for Antigravity CLI, safe prompt injection, single-session protection, and independent Git/test verification |
 | Legal workflow | [Demand Letter Generator](./skills/legal/demand-letter-generator/README.md) | Chinese 催款函 from local evidence and template DOCX: confirmation gates, amounts/penalties, format-preserving Word, exhibit archive (optimized from [evan-agent-skills](https://github.com/evan66547/evan-agent-skills)) |
 
 Full index (inputs, workflow, outputs, limits): **[skills/INDEX.md](./skills/INDEX.md)**
