@@ -72,7 +72,7 @@ main() {
       prompt=$(cat)
       [[ -n "$prompt" ]] || { print -u2 'Prompt is empty'; exit 65; }
       frontmost=$(osascript -e 'tell application "System Events" to get name of first application process whose frontmost is true')
-      [[ "$frontmost" == 'Ghostty' ]] || {
+      [[ "${frontmost:l}" == 'ghostty' ]] || {
         print -u2 "Ghostty is not frontmost (frontmost: $frontmost)"
         exit 75
       }
