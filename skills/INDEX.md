@@ -88,6 +88,36 @@ Feasibility and stack recommendations require live search; conclusions bind to t
 Not investment, legal, compliance, or procurement advice; must not invent APIs, repos, or benchmarks.  
 不构成投资、法律、合规或采购建议；禁止虚构 API、仓库或基准数据。
 
+### Codex agy
+### Ghostty 可见 Antigravity CLI 工作流
+
+| | |
+| --- | --- |
+| **Path / 路径** | [`tech/codex-agy/`](./tech/codex-agy/) |
+| **Main / 主文件** | [SKILL.md](./tech/codex-agy/SKILL.md) |
+| **Intro / 介绍** | [README.md](./tech/codex-agy/README.md) |
+| **Status / 状态** | Active / 当前有效 |
+
+**Purpose / 用途**
+
+Visible, safe execution of the local Antigravity CLI (`agy`) in Ghostty, with input-method-safe prompt injection and independent Git/test verification.
+在 Ghostty 中可见、安全地运行本机 Antigravity CLI（`agy`），规避中文输入法干扰，并独立核验 Git、差异和测试结果。
+
+**Inputs / 输入**
+
+Work directory, approved agy options, non-sensitive task prompt, acceptance criteria, and prohibited actions.
+工作目录、已批准的 agy 参数、不含敏感信息的任务提示词、验收标准和禁止动作。
+
+**Outputs / 输出**
+
+Ghostty-visible execution plus stage reports grounded in process state, Git status, diffs, and tests.
+Ghostty 中可见的执行过程，以及基于进程、Git 状态、差异和测试的阶段核验报告。
+
+**Boundary / 边界**
+
+Does not grant push, deployment, production-database, environment-file, or permission-bypass authority.
+不授予推送、部署、生产库写入、环境文件修改或绕过权限的授权。
+
 ---
 
 ## Legal / 法律工作流
