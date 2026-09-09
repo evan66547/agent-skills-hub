@@ -26,7 +26,19 @@
 | 证据优先 | 关键结论优先一手来源、日期与核验状态 |
 | 边界清晰 | 明确非目标与免责声明 |
 
-## 快速开始
+## 安装（skills CLI）
+
+用开源 [skills CLI](https://github.com/vercel-labs/skills) 最快（兼容 Cursor、Claude Code、Codex 等）：
+
+```bash
+npx skills add evan66547/agent-skills-hub            # 安装全部
+npx skills add evan66547/agent-skills-hub --list     # 先浏览
+npx skills add evan66547/agent-skills-hub --skill demand-letter-generator
+```
+
+也可 clone／拷贝目录后手动加载 `SKILL.md`（见下）。
+
+## 快速开始（手动）
 
 1. 打开 `skills/<分类>/<skill名称>/`。
 2. 阅读该目录 `README.md`（适用范围、输入与限制）。
