@@ -26,7 +26,19 @@ This is **not** a runtime, SaaS, or model store — clone, fork, or copy folders
 | Evidence-first | Prefer sources, dates, verification over model memory |
 | Clear boundaries | Explicit non-goals and disclaimers |
 
-## Quick start
+## Install (skills CLI)
+
+Fastest path via the open [skills CLI](https://github.com/vercel-labs/skills) (works with Cursor, Claude Code, Codex, and many others):
+
+```bash
+npx skills add evan66547/agent-skills-hub            # install all skills
+npx skills add evan66547/agent-skills-hub --list     # browse first
+npx skills add evan66547/agent-skills-hub --skill demand-letter-generator
+```
+
+Or clone / copy a folder and load `SKILL.md` manually (see below).
+
+## Quick start (manual)
 
 1. Open `skills/<category>/<skill-name>/`.
 2. Read that folder’s `README.md` (scope, inputs, limits).
