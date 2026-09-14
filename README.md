@@ -77,6 +77,10 @@ agent-skills-hub/
         └── references/   # optional
 ```
 
+## Security
+
+See [SECURITY.md](./SECURITY.md).
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md). Skills should be specific, verifiable, and minimal.
